@@ -1,0 +1,137 @@
+body {
+  background-color: #fafbfd;
+  display: flex;
+  font-family: 'Muli', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.contract, .existing-contracts {
+  margin: 20px;
+  display: inline-block;
+  padding: 40px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1.2rem rgb(189 197 209 / 20%);
+  width: 50%;
+  min-height: 350px;
+  
+  
+ 
+}
+
+.existing-contracts{
+  max-height: 350px ;
+  overflow-y: scroll;
+}
+
+
+
+h1 {
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: #aaa;
+  margin: 10px 0px;
+  font-size: 12px;
+  width: 100%;
+}
+
+input{
+  padding: 6px 0px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.button {
+  background-color: #f58427;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0px;
+  padding: 9px 0px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+ 
+}
+
+.button:disabled{
+  background-color: gray;
+}
+
+.existing-contract ul {
+  padding: 10px;
+  margin: 20px;
+  background-color: #eee;
+}
+
+.existing-contract ul > li {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+
+.existing-contract ul > li > div {
+  margin: 0 5px;
+  word-break: break-all
+}
+
+.existing-contract ul > li > :first-child {
+  font-weight: bold;
+}
+
+.existing-contract .complete {
+  color: #5aa75a;
+  text-align: center;
+}
+
+.contract__root{
+ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 95vw;
+   
+}
+.contract_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.error{
+  color:red;
+  font-size: 10px;
+  text-transform: lowercase;
+  margin: 0;
+}
+
+@media  screen and (max-width: 1024px){
+  .contract__root{
+    flex-direction: column;
+  }
+  .contract,
+  .existing-contracts{
+    width: 70%;
+    margin: 10px 0;
+  }
+  .existing-contracts ul{
+   
+      padding:0;
+      margin: 0;
+    }
+  
+}
+
